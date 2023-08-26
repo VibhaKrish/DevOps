@@ -1,0 +1,23 @@
+Commands:
+
+1.$ docker run <image_name> 
+	To run the container(from image)
+2.$ docker pull <image_name>
+	To pull any image from the container. Default is latest version.
+3.$ docker ps [option]
+	This option can be: -a= lists all containers including the ones stopped.
+			    -q=lists the ID of the containers
+		            -l= shows the latest container
+4.$ docker stop <container_ID>
+	To stop the container 
+5.$ docker start <container_ID>
+	To start the container whcih was stopped
+6.$ docker images
+	Lists all the pulled images in the system
+7.$ docker rm <container ID or name>
+	To delete the container
+8.$ docker build <path to docker file or .>
+	To build an image from the dockerfile.
+	The dot is specifying the build context like what files and folders to include and belong to our project
+9.$ docker commit <conatainer id> <username/imagename>
+	To  create a new image of an edited container on the local system
