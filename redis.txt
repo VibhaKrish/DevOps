@@ -1,0 +1,10 @@
+Creating a Dockerfile-----------------------------------------------------------
+
+   1  mkdir redis-image
+   2  cd redis-image
+   3  code .
+   4  docker build .
+	# Will happen in different stages 
+   5  docker run 42e21b8552a30feb4d53e70820bc075fb680232c58ba8bfac123daf4f68134d5
+
+
