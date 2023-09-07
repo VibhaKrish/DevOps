@@ -1,0 +1,12 @@
+
+  241  mkdir docker-flask-app
+  242  cd docker-flask-app
+  243  code .
+  244  docker build -t my-flask-app .
+  246  docker build --no-cache -t my-flask-app .
+  249  docker run -p 5000:5000 my-flask-app
+
+Access the web application on http://localhost:5000
+You will see the message.
+
+
