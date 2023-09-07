@@ -1,23 +1,84 @@
-Commands:
+ DOCKER COMMANDS:
+
 
 1.$ docker run <image_name> 
 	To run the container(from image)
+----------------------------------------
 2.$ docker pull <image_name>
 	To pull any image from the container. Default is latest version.
+-----------------------------------------------------------------------
 3.$ docker ps [option]
 	This option can be: -a= lists all containers including the ones stopped.
 			    -q=lists the ID of the containers
 		            -l= shows the latest container
+-------------------------------------------------------------------------------
 4.$ docker stop <container_ID>
 	To stop the container 
+--------------------------------
 5.$ docker start <container_ID>
 	To start the container whcih was stopped
-6.$ docker images
+------------------------------------------------
+6.$ docker restart <container>
+	To restart the container
+--------------------------------
+7.$ docker images
 	Lists all the pulled images in the system
-7.$ docker rm <container ID or name>
+-------------------------------------------------
+8.$ docker rm <container ID or name>
 	To delete the container
-8.$ docker build <path to docker file or .>
+------------------------------------
+9.$ docker build <path to docker file or .>
 	To build an image from the dockerfile.
 	The dot is specifying the build context like what files and folders to include and belong to our project
-9.$ docker commit <conatainer id> <username/imagename>
+-----------------------------------------------------------------------------------------------------------------
+10.$ docker commit <conatainer id> <username/imagename>
 	To  create a new image of an edited container on the local system
+-------------------------------------------------------------------------
+11.$ docker attach <container>
+	Attach to a Running Container
+-------------------------------------
+12.$ docker rmi <image>
+	To Delete a Docker Image
+------------------------------------
+13.$ docker logs <container>
+	View Logs of a Containe
+------------------------------------
+14.$ docker rename <old_container_name> <new_container_name>
+	Rename a Docker container
+---------------------------------------------------------------
+15.$ docker stats <container>
+	To display container resource statistics
+------------------------------------------------
+16.$ docker info
+	To display system wide docker info
+-------------------------------------------
+17.$ docker version
+	Docker version info
+--------------------------------------------
+18.$ docker compose up
+	Start containers defined in compose file
+---------------------------------------------------
+19.$ docker compose up -d
+	In detached mode
+---------------------------
+20.$ docker-compose down
+	Stop and remove the conatainers created by compose
+----------------------------------------------------------
+21.$ docker compose ps
+	List of the status of containers created by compose
+------------------------------------------------------------
+22.$ docker compose build
+	Build docker images in a compose file
+------------------------------------------------
+23.$ docker compose pull
+	Pull the latest image
+-----------------------------
+24.$ docker inspect <container or image>
+	Provides detailed information about a container, image, or other Docker objects.
+-----------------------------------------------------------------------------------------
+25.$ docker exec <options> <container> <command>
+	Runs a command inside a running container. Options can include -flags for specifying a working directory or running in interactive mode.
+-------------------------------------------------------------------------------------------------------------------------------------------------
+26.$ docker-compose logs -f
+	Displays logs of all services in a Compose file following the logs in real-time.
+----------------------------------------------------------------------------------------
